@@ -6,15 +6,15 @@ import lombok.Getter;
 @Getter
 public class UserResponseDTO {
 
-    private Long id;
-    private String firstname;
-    private String lastname;
-    private String email;
-    private String languesParlees;
-    private String niveauCompetence;
-    private String objectifsApprentissage;
-    private String preferencesRencontre;
-    private String presentation;
+    private final Long id;
+    private final String firstname;
+    private final String lastname;
+    private final String email;
+    private final String languesParlees;
+    private final String niveauCompetence;
+    private final String objectifsApprentissage;
+    private final String preferencesRencontre;
+    private final String presentation;
 
     public UserResponseDTO(User user) {
         this.id = user.getId();

@@ -4,7 +4,6 @@ import com.sunlingua.sunlinguabackend.service.LearningResourceService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -18,11 +17,10 @@ import java.util.Locale;
 public class LearningResourceController {
 
     private final LearningResourceService resourceService;
-    private final ResourceBundleMessageSource messageSource;
 
     @Operation(
-            description = "Get endpoint for manager",
-            summary = "This is a summary for management get endpoint",
+            description = "Get endpoint for Learning Resource",
+            summary = "This is a summary for Learning Resource get endpoint",
             responses = {
                     @ApiResponse(
                             description = "Success",

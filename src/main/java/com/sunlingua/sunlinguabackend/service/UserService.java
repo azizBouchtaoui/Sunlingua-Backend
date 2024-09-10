@@ -2,7 +2,6 @@ package com.sunlingua.sunlinguabackend.service;
 
 import com.sunlingua.sunlinguabackend.dto.*;
 import com.sunlingua.sunlinguabackend.entity.User;
-import com.sunlingua.sunlinguabackend.exception.UserAlreadyExistException;
 import com.sunlingua.sunlinguabackend.repository.UserRepository;
 import com.sunlingua.sunlinguabackend.user.ChangePasswordRequest;
 import lombok.RequiredArgsConstructor;
@@ -29,11 +28,11 @@ public class UserService {
 
 
 
-    public UserResponseDTO loadUserByEmail(String email, Locale locale) {
-        User user = userRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException(messageSource.getMessage("erreur.email.inexistant", null, locale)));
-        return new UserResponseDTO(user);
-    }
+//    public UserResponseDTO loadUserByEmail(String email, Locale locale) {
+//        User user = userRepository.findByEmail(email)
+//                .orElseThrow(() -> new RuntimeException(messageSource.getMessage("erreur.email.inexistant", null, locale)));
+//        return new UserResponseDTO(user);
+//    }
 
     public void changePassword(ChangePasswordRequest request, Principal connectedUser, Locale locale) {
 
@@ -108,12 +107,12 @@ public class UserService {
         );
     }
 
-    public List<UserScheduleDTO> getUserSchedule(Principal connectedUser) {
-        return List.of(
-                new UserScheduleDTO(LocalDateTime.now().plusDays(1), "John Doe", "Cafe in downtown"),
-                new UserScheduleDTO(LocalDateTime.now().plusDays(3), "Jane Smith", "Library")
-        );
-    }
+//    public List<UserScheduleDTO> getUserSchedule(Principal connectedUser) {
+//        return List.of(
+//                new UserScheduleDTO(LocalDateTime.now().plusDays(1), "John Doe", "Cafe in downtown"),
+//                new UserScheduleDTO(LocalDateTime.now().plusDays(3), "Jane Smith", "Library")
+//        );
+//    }
 
 
     }

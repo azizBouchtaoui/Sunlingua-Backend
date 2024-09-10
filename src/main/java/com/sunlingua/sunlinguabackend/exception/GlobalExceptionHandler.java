@@ -1,7 +1,6 @@
 package com.sunlingua.sunlinguabackend.exception;
 
 import lombok.Data;
-import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
