@@ -49,12 +49,12 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/schedule")
-    @PreAuthorize("hasAuthority('user:read')")
-    public ResponseEntity<List<UserScheduleDTO>> getUserSchedule(Principal connectedUser) {
-        List<UserScheduleDTO> schedule = userService.getUserSchedule(connectedUser);
-        return ResponseEntity.ok(schedule);
-    }
+//    @GetMapping("/schedule")
+//    @PreAuthorize("hasAuthority('user:read')")
+//    public ResponseEntity<List<UserScheduleDTO>> getUserSchedule(Principal connectedUser) {
+//        List<UserScheduleDTO> schedule = userService.getUserSchedule(connectedUser);
+//        return ResponseEntity.ok(schedule);
+//    }
 
     @GetMapping("/progress")
     @PreAuthorize("hasAuthority('user:read')")

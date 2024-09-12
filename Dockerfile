@@ -3,7 +3,7 @@ LABEL authors="Aziz BOUCHTAOUI"
 ARG JAR_FILE=target/*.jar
 
 WORKDIR /app
-COPY ./target/Sunlingua-Backend-0.0.1-SNAPSHOT.jar app.jar
+COPY ./target/Sunlingua-Backend-0.0.1.jar app.jar
 
 EXPOSE 8080
 
