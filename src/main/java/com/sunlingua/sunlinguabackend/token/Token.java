@@ -3,12 +3,12 @@ package com.sunlingua.sunlinguabackend.token;
  
 import com.sunlingua.sunlinguabackend.entity.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -26,6 +26,12 @@ public class Token {
     public TokenType tokenType = TokenType.BEARER;
 
     public boolean revoked;
+
+    private LocalDateTime createdAt;
+    private LocalDateTime expiresAt;
+    private LocalDateTime validatedAt;
+
+
 
     public boolean expired;
 
