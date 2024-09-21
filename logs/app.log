@@ -92,7 +92,7 @@
 2024-09-20 16:48:48 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
 2024-09-20 16:48:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-20 16:48:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-09-20 16:48:48 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 16:48:48 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 16:48:48 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -277,10 +277,10 @@ Caused by: org.hibernate.AnnotationException: Association 'com.sunlingua.sunling
 2024-09-20 16:51:58 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
 2024-09-20 16:51:59 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2024-09-20 16:51:59 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table if exists users 
+    alter table if exists users
        add column account_locked boolean not null" via JDBC [ERREUR: la colonne « account_locked » de la table « users » contient des valeurs NULL]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table if exists users 
+    alter table if exists users
        add column account_locked boolean not null" via JDBC [ERREUR: la colonne « account_locked » de la table « users » contient des valeurs NULL]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
@@ -435,10 +435,10 @@ Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « account_lock
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 137 common frames omitted
 2024-09-20 16:51:59 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table if exists users 
+    alter table if exists users
        add column created_date timestamp(6) not null" via JDBC [ERREUR: la colonne « created_date » de la table « users » contient des valeurs NULL]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table if exists users 
+    alter table if exists users
        add column created_date timestamp(6) not null" via JDBC [ERREUR: la colonne « created_date » de la table « users » contient des valeurs NULL]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
@@ -593,10 +593,10 @@ Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « created_date
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 137 common frames omitted
 2024-09-20 16:51:59 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table if exists users 
+    alter table if exists users
        add column enabled boolean not null" via JDBC [ERREUR: la colonne « enabled » de la table « users » contient des valeurs NULL]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table if exists users 
+    alter table if exists users
        add column enabled boolean not null" via JDBC [ERREUR: la colonne « enabled » de la table « users » contient des valeurs NULL]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
@@ -760,7 +760,7 @@ Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « enabled » d
 2024-09-20 16:52:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-20 16:52:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2024-09-20 16:52:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 16:52:00 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 16:52:00 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 16:52:00 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -839,7 +839,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'ap
 2024-09-20 17:10:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-20 17:10:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2024-09-20 17:10:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 17:10:46 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 17:10:46 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 17:10:46 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -914,7 +914,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'ap
 2024-09-20 17:13:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-20 17:13:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2024-09-20 17:13:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 17:13:03 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 17:13:03 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 17:13:03 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -1531,7 +1531,7 @@ jakarta.mail.AuthenticationFailedException: 534-5.7.9 Application-specific passw
 2024-09-20 17:45:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-09-20 17:45:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2024-09-20 17:45:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 17:45:52 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 17:45:52 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 17:45:52 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -2512,10 +2512,10 @@ org.postgresql.util.PSQLException: ERREUR: une valeur NULL viole la contrainte N
 2024-09-20 18:10:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
 2024-09-20 18:10:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
 2024-09-20 18:10:39 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:10:39 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:10:39 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:10:39 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:10:39 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -2561,10 +2561,10 @@ Consider defining a bean named 'auditorProvider' in your configuration.
 2024-09-20 18:10:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
 2024-09-20 18:10:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
 2024-09-20 18:10:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:10:42 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:10:42 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:10:42 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:10:42 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -2615,10 +2615,10 @@ Consider defining a bean named 'auditorProvider' in your configuration.
 2024-09-20 18:11:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-20 18:11:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2024-09-20 18:11:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:11:41 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:11:41 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:11:41 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:11:41 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3075,10 +3075,10 @@ org.postgresql.util.PSQLException: ERREUR: une valeur NULL viole la contrainte N
 2024-09-20 18:29:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
 2024-09-20 18:29:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
 2024-09-20 18:29:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:29:56 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:29:56 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:29:56 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:29:56 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3124,10 +3124,10 @@ Consider defining a bean named 'auditorProvider' in your configuration.
 2024-09-20 18:29:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
 2024-09-20 18:29:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
 2024-09-20 18:29:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:29:59 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:29:59 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:29:59 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:29:59 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3173,10 +3173,10 @@ Consider defining a bean named 'auditorProvider' in your configuration.
 2024-09-20 18:31:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
 2024-09-20 18:31:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
 2024-09-20 18:31:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:31:12 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:31:12 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:31:12 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:31:12 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3195,10 +3195,10 @@ Consider defining a bean named 'auditorProvider' in your configuration.
 2024-09-20 18:31:31 [restartedMain] DEBUG c.s.s.SunlinguaBackendApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
 2024-09-20 18:31:31 [restartedMain] INFO  c.s.s.SunlinguaBackendApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-20 18:31:31 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'jpaAuditingHandler' defined in null: Cannot register bean definition [Root bean: class [org.springframework.data.auditing.AuditingHandler]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] for bean 'jpaAuditingHandler' since there is already [Root bean: class [org.springframework.data.auditing.AuditingHandler]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] bound.
-2024-09-20 18:31:31 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:31:31 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:31:31 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:31:31 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3216,10 +3216,10 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 2024-09-20 18:31:32 [restartedMain] DEBUG c.s.s.SunlinguaBackendApplication - Running with Spring Boot v3.3.3, Spring v6.1.12
 2024-09-20 18:31:32 [restartedMain] INFO  c.s.s.SunlinguaBackendApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-20 18:31:33 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'jpaAuditingHandler' defined in null: Cannot register bean definition [Root bean: class [org.springframework.data.auditing.AuditingHandler]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] for bean 'jpaAuditingHandler' since there is already [Root bean: class [org.springframework.data.auditing.AuditingHandler]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] bound.
-2024-09-20 18:31:33 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:31:33 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:31:33 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:31:33 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3240,10 +3240,10 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 2024-09-20 18:31:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2024-09-20 18:31:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2024-09-20 18:31:50 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'jpaAuditingHandler' defined in null: Cannot register bean definition [Root bean: class [org.springframework.data.auditing.AuditingHandler]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] for bean 'jpaAuditingHandler' since there is already [Root bean: class [org.springframework.data.auditing.AuditingHandler]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] bound.
-2024-09-20 18:31:50 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:31:50 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:31:50 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:31:50 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3290,10 +3290,10 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 2024-09-20 18:32:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-20 18:32:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2024-09-20 18:32:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:32:53 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:32:53 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:32:53 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:32:53 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -3341,10 +3341,10 @@ Consider defining a bean named 'auditorProvider' in your configuration.
 2024-09-20 18:33:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-09-20 18:33:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2024-09-20 18:33:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:33:29 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:33:29 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:33:29 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:33:29 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -5858,7 +5858,7 @@ java.util.MissingFormatArgumentException: Format specifier '%s'
 2024-09-20 18:52:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-09-20 18:52:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2024-09-20 18:52:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:52:53 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:52:53 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 18:52:53 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -6026,10 +6026,10 @@ Caused by: java.lang.ClassNotFoundException: com.sunlingua.sunlinguabackend.auth
 2024-09-20 18:58:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-09-20 18:58:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2024-09-20 18:58:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 18:58:07 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 18:58:07 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 18:58:07 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 18:58:07 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -6225,7 +6225,7 @@ Consider defining a bean of type 'com.sunlingua.sunlinguabackend.auth.Authentica
 2024-09-20 19:16:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
 2024-09-20 19:16:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
 2024-09-20 19:16:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 19:16:09 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 19:16:09 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 19:16:09 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -6295,7 +6295,7 @@ Caused by: java.lang.ClassNotFoundException: com.sunlingua.sunlinguabackend.auth
 2024-09-20 19:16:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
 2024-09-20 19:16:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
 2024-09-20 19:16:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 19:16:11 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 19:16:11 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 19:16:11 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -7235,7 +7235,7 @@ org.springframework.mail.MailSendException: Failed messages: jakarta.mail.SendFa
 2024-09-20 19:42:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-09-20 19:42:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2024-09-20 19:42:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 19:42:16 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 19:42:16 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 19:42:16 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -8339,10 +8339,10 @@ java.lang.RuntimeException: Activation token has expired. A new token has been s
 2024-09-20 19:58:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-09-20 19:58:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2024-09-20 19:58:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 19:58:13 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 19:58:13 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 19:58:13 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 19:58:13 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -11579,10 +11579,10 @@ java.lang.RuntimeException: Activation token has expired. A new token has been s
 2024-09-20 20:47:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-09-20 20:47:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2024-09-20 20:47:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 20:47:29 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 20:47:29 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 20:47:29 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 20:47:29 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -12981,10 +12981,10 @@ Consider defining a bean of type 'com.sunlingua.sunlinguabackend.auth.Authentica
 2024-09-20 21:20:54 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-09-20 21:20:54 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
 2024-09-20 21:20:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 21:20:54 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 21:20:54 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-20 21:20:54 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-09-20 21:20:54 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
 
 ***************************
 APPLICATION FAILED TO START
@@ -13104,7 +13104,7 @@ Consider defining a bean named 'auditorAware' in your configuration.
 2024-09-20 21:22:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
 2024-09-20 21:22:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
 2024-09-20 21:22:18 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 21:22:18 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 21:22:18 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 21:22:18 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
@@ -13832,7 +13832,7 @@ Caused by: java.net.UnknownHostException: smtp.gmail.com
 2024-09-20 21:37:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
 2024-09-20 21:37:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
 2024-09-20 21:37:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-09-20 21:37:16 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-09-20 21:37:16 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger -
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2024-09-20 21:37:16 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
