@@ -46,7 +46,7 @@ This will:
   Password: admin
 
 
-  After logging in, add the PostgreSQL server with the following connection details:
+After logging in, add the PostgreSQL server with the following connection details:
 
     - Host: db
     - Port: 5432
