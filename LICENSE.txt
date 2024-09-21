@@ -1,0 +1,14 @@
+Freelance Project License
+
+Copyright (c) 2024 Aziz BOUCHTAOUI
+
+Permission to use, modify, and distribute this software is granted for the MobileAppProject only upon full payment of the agreed-upon amount for the project.
+
+Until full payment is received, the following conditions apply:
+1. The project may not be used in any production environment.
+2. The project code may not be redistributed or sublicensed to third parties.
+3. The project owner may not claim ownership of this software or present it as their own work.
+
+Upon full payment, full rights to use, modify, and distribute the software will be granted, with credit to the original author, Aziz BOUCHTAOUI.
+
+Any violation of these terms before payment may result in legal action.

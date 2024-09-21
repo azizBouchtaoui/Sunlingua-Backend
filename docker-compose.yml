@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_APPLICATION_NAME: Sunlingua-Backend
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/sunlingua
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "true"
+      SPRING_MESSAGES_BASENAME: messages
+      SPRING_MESSAGES_ENCODING: UTF-8
+      APP_SECRET_KEY: 123E635266556A586E3272317538786F413F7828472B46250645367566B5970
+      APP_EXPIRATION_TIME: 86400000
+      APP_REFRESH_TOKEN_EXPIRATION: 604800000
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_SECURITY: DEBUG
+      LOGGING_LEVEL_ROOT: INFO
+      LOGGING_LEVEL_COM_SUNLINGUA_SUNLINGUABACKEND: DEBUG
+      LOGGING_FILE_NAME: logs/app.log
+    depends_on:
+      - db
+    networks:
+      - app-network
+    volumes:
+      - ./logs:/app/logs
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: sunlingua
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    networks:
+      - app-network
+  mail-dev:
+    container_name: mail-dev-bsn
+    image: maildev/maildev
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+  keycloak:
+      container_name: keycloak-bsn
+      image: quay.io/keycloak/keycloak:24.0.2
+      ports:
+        - 9090:8080
+      environment:
+        KEYCLOAK_ADMIN: admin
+        KEYCLOAK_ADMIN_PASSWORD: admin
+      networks:
+        - app-network
+      command:
+        - "start-dev"
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  keycloak:
+    driver: local
+
