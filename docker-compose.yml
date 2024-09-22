@@ -3,8 +3,12 @@ version: '3.8'
 services:
   app:
     build: .
+    container_name: sunlingua-backend
     ports:
       - "8080:8080"
+    volumes:
+      - ./src/main/resources/templates:/app/templates
+      - ./logs:/app/logs
     environment:
       SPRING_APPLICATION_NAME: Sunlingua-Backend
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/sunlingua
@@ -28,9 +32,8 @@ services:
       - db
     networks:
       - app-network
-    volumes:
-      - ./logs:/app/logs
-      - ./src/main/resources:/app/resources
+
+
 
   db:
     image: postgres:latest
