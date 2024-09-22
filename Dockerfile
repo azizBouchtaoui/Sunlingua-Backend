@@ -6,6 +6,7 @@ RUN apk add --no-cache maven
 
 # Set the working directory inside the container
 WORKDIR /app
+COPY --chown=node:node ./package*.json ./
 
 # Copy the pom.xml and source code into the container
 COPY pom.xml .
