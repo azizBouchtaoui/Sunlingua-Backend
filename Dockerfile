@@ -1,10 +1,9 @@
 FROM openjdk:17-jdk-alpine
 LABEL authors="Aziz BOUCHTAOUI"
-VOLUME /tmp
 
+WORKDIR /app
 
 COPY target/Sunlingua-Backend-0.0.1.jar app.jar
-
 
 
 EXPOSE 8080
