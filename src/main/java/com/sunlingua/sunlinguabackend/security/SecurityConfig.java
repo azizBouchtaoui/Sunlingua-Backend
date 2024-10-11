@@ -56,6 +56,7 @@ public class SecurityConfig {
                                 //.requestMatchers(POST, "/api/v1/resources/**").hasAnyAuthority(ADMIN_CREATE.name(), CREATOR_CREATE.name())
                                 .requestMatchers(POST, "/api/v1/resources/**").hasAnyAuthority(ADMIN_CREATE.getPermission(), CREATOR_CREATE.getPermission())
 
+
                                 .requestMatchers(PUT, "/api/v1/resources/**").hasAnyAuthority(ADMIN_UPDATE.name(), CREATOR_UPDATE.name())
                                 .requestMatchers(DELETE, "/api/v1/resources/**").hasAnyAuthority(ADMIN_DELETE.name(), CREATOR_DELETE.name())
                                 .anyRequest()
